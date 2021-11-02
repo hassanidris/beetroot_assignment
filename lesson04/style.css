@@ -1,0 +1,448 @@
+/*
+
+COLORS:
+- white: #ffffff
+- Paieg: #f2e9e4
+- Dark Paieg: #c9ada7
+- Meaty: #9a8c98
+- Normal blue: #4a4e69
+- Dark blue: #22223b
+
+*/
+
+
+
+/*  ----  Uneversal Style  ----  */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  ----  General Style  ----  */
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #F2E9E4;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #4A4E69;
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.725rem;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+p {
+    margin-bottom: 1.125em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.direction {
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.between {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+/*  ----  Header Style  ----  */
+
+.header {
+    height: 100vh;
+    background: url(images/banner_shape.png) no-repeat right;
+}
+
+.logo {
+    height: 70px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 1rem;
+    margin-right: 40px;
+  }
+
+  .nav__item {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    
+  }
+
+  .nav__link {
+    color: #4A4E69;
+  }
+
+  .nav__link:hover {
+    color: #c9ada7;
+  }
+  
+  .nav__item + .nav__item {
+    margin-left: 50px;
+  }
+
+.banner-text {
+    width: 50%;
+}
+
+.banner__hello {
+    color: #707070;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+.banner__iam {
+    font-family: 'Lato', sans-serif;
+    color: #707070;
+    text-transform:capitalize;
+    font-size: 3.5rem;
+}
+
+.banner__description {
+    color: #707070;
+    font-size: 3rem;
+    line-height: 1.5;
+
+}
+
+.banner-image {
+    margin-top: 10px;
+    width: 44%;
+    align-items: baseline;
+    animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+/*  ----  Section About Style  ----  */
+
+.info {
+    
+    background-color: #4A4E69;
+    color: white;
+    padding: 30px 0;
+}
+
+.info-about {
+    background: url(images/about_shape.png) no-repeat left;
+    width: 60%;
+}
+
+
+.info-about__title {
+    color: white;
+}
+
+.info-skills {
+    margin-left: 50px;
+    width: 40%;
+}
+
+.info-skills__title {
+    color: white;
+}
+
+.info-skills__list {
+    list-style: none;
+}
+
+.info-skills__item {
+    font-size: .7rem;
+    background-color: white;
+    color: #4A4E69;
+    padding: 3px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .info-skills__item span {
+    justify-content: space-between;
+} */
+.info-skills__percentage {
+    text-align: right;
+}
+
+.l40 {
+    width: 50%;
+}
+
+.l30 {
+    width: 40%;
+}
+
+.l80 {
+    width: 90%;
+}
+
+.l60 {
+    width: 70%;
+}
+
+.l70 {
+    width: 80%;
+}
+
+/*  ----  Section Experience Style  ----  */
+
+.experience {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.experience__title {
+    
+    justify-content: center;
+
+    /* border: 1px solid red; */
+}
+
+
+
+
+
+
+
+.timeline-container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+#timeline .timeline-item:after, #timeline .timeline-item:before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+#timeline:before {
+  content: "";
+  width: 3px;
+  height: 94%;
+  background: #4a4e69;
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+#timeline:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+#timeline .timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+#timeline .timeline-item .timeline-icon {
+  background: #4a4e69;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -23px;
+  border-radius: 50%;
+}
+
+#timeline .timeline-item .timeline-content {
+  width: 45%;
+  background: #fff;
+  padding: 20px;
+}
+#timeline .timeline-item .timeline-content h3 {
+  padding: 15px;
+  background: #4a4e69;
+  color: #fff;
+  margin: -20px -20px 0 -20px;
+
+}
+#timeline .timeline-item .timeline-content p {
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  color: #4a4e69;
+}
+#timeline .timeline-item .timeline-content:before {
+  content: '';
+  position: absolute;
+  left: 45%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #4a4e69;
+}
+#timeline .timeline-item .timeline-content.right {
+  float: right;
+}
+#timeline .timeline-item .timeline-content.right:before {
+  content: '';
+  right: 45%;
+  left: inherit;
+  border-left: 0;
+  border-right: 7px solid #4a4e69;
+}
+
+.time-stamp {
+    font-size: 14px;
+    color: #4a4e69;
+    font-weight: lighter;
+}
+
+.time-logo {
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/*  ----  Section Portfolio Style  ----  */
+
+
+
+.portfolio__title {
+    height: 400px;
+    justify-content: center;
+}
+
+
+
+/*  ----  Section footer  ----  */
+
+.contact {
+    background-color: #4a4e69;
+    color: white;
+    padding: 30px 0;
+    width: 100%;
+}
+.contact-icon {
+    height: 20px;
+}
+
+.contact h4 {
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact a {
+    display: block;
+    color: white;
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.contact a:hover {
+    
+    color: #c9ada7;
+}
+
+
+
+.contact-links__media {
+    display: flex;
+}
+
+
+.contact-links__media li+li {
+    margin-left: 20px;
+}
