@@ -1,0 +1,190 @@
+/* ------------------- */
+/* Custom Properties   */
+/* ------------------- */
+
+:root {
+    /*  colors  */
+    --clr-black: 36 21% 15%;
+    --clr-wistful: 251 24% 72%;
+    --clr-classicRose: 333 48% 84%;
+    --clr-nordic: 190 30% 16%;
+    --clr-seaNymph: 157 24% 63%;
+    --clr-thistle: 304 27% 78%;
+    --clr-bossanova: 297 13% 27%;
+    --clr-neptune: 184 20% 54%;
+    --clr-botticelli: 190 13% 63%;
+    --clr-pixieGreen: 97 33% 75%;
+    --clr-ebony: 224 10% 21%;
+    --clr-shadowGreen: 172 23% 68%;
+
+    --clr-white: 0 0% 100%;
+
+    /*  font-size  */
+    --fs-600: 2.75rem;
+
+
+    /*  font-family  */
+    --ff-poppins: 'Poppins', sans-serif;
+
+    /*  font-weight  */
+    --fw-700: 700;
+}
+
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/*  Box sizing  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/*  Reset Margins  */
+body,
+h1 {
+    margin: 0;
+}
+
+
+
+
+
+/*  setup the body  */
+body {
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-600);
+    color: hsl( var(--clr-black) );
+    background-color: hsl( var(--clr-white) );
+    line-height: 1.9;
+}
+
+
+
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: .5em;
+    padding: .5em;
+}
+
+
+
+
+.wrapper {
+    height: 100vh;
+}
+
+
+
+
+
+  /*  Colors  */
+
+    .bg-shadowGreen {background-color: hsl( var(--clr-shadowGreen) );}
+    .bg-wistful {background-color: hsl( var(--clr-wistful) );} 
+    .bg-ebony {background-color: hsl( var(--clr-ebony) );}
+    .bg-pixieGreen {background-color: hsl( var(--clr-pixieGreen) );}
+    .bg-botticelli {background-color: hsl( var(--clr-botticelli) );}
+    .bg-neptune {background-color: hsl( var(--clr-neptune) );}
+    .bg-bossanova {background-color: hsl( var(--clr-bossanova) );}
+    .bg-thistle {background-color: hsl( var(--clr-thistle) );}
+    .bg-seaNymph {background-color: hsl( var(--clr-seaNymph) );}
+    .bg-nordic {background-color: hsl( var(--clr-nordic) );}
+    .bg-classicRose {background-color: hsl( var(--clr-classicRose) );}
+    .bg-white {background-color: hsl( var(--clr-white) );}
+
+
+    .text-black {color: hsl( var(--clr-black) );}
+
+
+  /* typography */
+
+    .ff-poppins { font-family: var(--ff-poppins); } 
+
+
+
+    .uppercase { text-transform: uppercase; }
+
+    .fs-600 { font-size: var(--fs-600); }
+    
+
+    .fw-700 { font-weight: var(--fw-700);}
+
+
+
+    
+/* ------ boxs ------- */
+
+.boxs {
+    padding: 1em;
+}
+
+.box1 {
+    background-color: hsl( var(--clr-wistful) );
+    grid-area: 1 / 1 / 4 / 3;
+}
+
+.box2 {
+    background-color: hsl( var(--clr-classicRose) );
+    grid-area: 1 / 3 / 7 / 5;
+}
+
+.box3 {
+    background-color: hsl( var(--clr-nordic) );
+    grid-area: 1 / 5 / span 2 / span 2;
+}
+
+.box4 {
+    background-color: hsl( var(--clr-seaNymph) );
+    grid-area: 3 / 5 / 5 / 7;
+}
+
+.box5 {
+    background-color: hsl( var(--clr-thistle) );
+    grid-area: 4 / 1 / 7 / 3;
+}
+
+.box6 {
+    background-color: hsl( var(--clr-bossanova) );
+    grid-area: 5 / 5 / 7 / 7;
+}
+
+.box7 {
+    background-color: hsl( var(--clr-neptune) );
+    grid-area: 7 / 1 / 11 / 3;
+}
+
+.box8 {
+    background-color: hsl( var(--clr-botticelli) );
+    grid-area: 7 / 3 / 9 / 4;
+}
+
+.box9 {
+    background-color: hsl( var(--clr-pixieGreen) );
+    grid-area: 7 / 4 / 11 / 6;
+}
+
+.box10 {
+    background-color: hsl( var(--clr-ebony) );
+    grid-area: 7 / 6 / 11 / 7;
+}
+
+.box11 {
+    background-color: hsl( var(--clr-wistful) );
+    grid-area: 9 / 3 / 11 / 4;
+}
+
+.title {
+    background-color: hsl( var(--clr-shadowGreen) );
+}
