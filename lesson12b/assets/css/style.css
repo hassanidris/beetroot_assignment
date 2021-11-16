@@ -130,12 +130,12 @@ textarea {
     /* border: 1px solid red; */
 }
 
-.grid {
+/* .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: var(--gap, 1.5rem);
-}
+} */
 
 
 .container {
@@ -190,10 +190,19 @@ textarea {
 
   
 
+    .header_ text {
+        width: 40%; 
+        text-align: center;
+    }
+
     /* ------ grid items ------- */
 
     .cards {
         margin-top: 2em;
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: var(--gap, 1.5rem);
     }
     
     .card_item {
@@ -231,4 +240,33 @@ textarea {
     .card_icon {
         align-self: flex-end;
     }
+
+
+    @media (max-width: 420px) {  
+        .statement {
+            font-size: var(--fs-400);
+            text-align: center;
+            margin: 0 .1em;
+        }
+
+        .header_title {
+            font-size: var(--fs-400);
+            text-align: center;
+            margin: 0 .4em;
+        }
+
+        .header_text {
+            width: 100%; 
+            text-align: center;
+            margin: 0 6em;
+        }
+        
+        .cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1em;
+        }
+      }
 
