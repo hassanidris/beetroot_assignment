@@ -242,7 +242,7 @@ textarea {
     }
 
 
-    @media (max-width: 420px) {  
+    @media (max-width: 440px) {  
         .statement {
             font-size: var(--fs-400);
             text-align: center;
