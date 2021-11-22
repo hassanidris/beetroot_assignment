@@ -261,6 +261,21 @@
         grid-row: span 7;
       }
   }
+
+  .gallery img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    flex: 1;
+    opacity: .7;
+    object-fit: cover;
+    transition: all 300ms ease-out;
+}
+
+.gallery__image:hover img {
+  transform: scale(1.2);
+    opacity: 1;
+}
   
 
   
