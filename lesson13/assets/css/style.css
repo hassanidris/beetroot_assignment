@@ -1,0 +1,383 @@
+/* ------------------- */
+/* Custom Properties   */
+/* ------------------- */
+:root {
+  /*  Colors  */
+  --clr-black: 0 0% 7%;
+  --clr-blue: 238 87% 62%;
+  --clr-white: 0 0% 100%;
+  --clr-gray: 0 0% 85%;
+  /*  font-size  */
+  --fs-600: 2.5rem;
+  --fs-500: 2rem;
+  --fs-400: 1.375rem;
+  --fs-300: 1.125rem;
+  --fs-200: 1rem;
+  /*  font-family  */
+  --ff-mulish: "Mulish", sans-serif;
+  /*  font-weight  */
+  --fw-700: 700;
+  --fw-400: 400;
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+/*  Box sizing  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*  Reset Margins  */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-weight: 200;
+}
+
+/*  setup the body  */
+body {
+  font-family: var(--ff-mulish);
+  font-size: var(--fs-200);
+  color: hsl(var(--clr-black));
+  background-color: hsl(var(--clr-white));
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/*  make images easier to work with  */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  color: hsl(var(--clr-gray));
+  margin: 2em 0;
+}
+
+/* make form elements easier to work with */
+section {
+  margin: 3.5em 0;
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 75rem;
+  margin-top: 1em;
+}
+
+/*  Colors  */
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
+
+.text-black {
+  color: hsl(var(--clr-black));
+}
+
+.text-blue {
+  color: hsl(var(--clr-blue));
+}
+
+.text-white {
+  color: hsl(var(--clr-white));
+}
+
+.text-gray {
+  color: hsl(var(--clr-gray));
+}
+
+.text-black-alpha {
+  color: hsl(var(--clr-black)/0.6);
+}
+
+/* typography */
+.ff-mulish {
+  font-family: var(--ff-mulish);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.fs-500 {
+  font-size: var(--fs-200);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-300 {
+  font-size: var(--fs-200);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fw-700 {
+  font-weight: var(--fw-700);
+}
+
+.fw-400 {
+  font-weight: var(--fw-400);
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* ---------- Header Section ------------- */
+.header {
+  display: flex;
+  flex-basis: 100%;
+  gap: var(--gap, 0.6rem);
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav-list {
+  display: flex;
+  flex-basis: 100%;
+  gap: var(--gap, 0.6rem);
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-list-item {
+  margin-left: 1.3em;
+  display: inline-block;
+}
+.nav-list-item__link {
+  color: hsl(var(--clr-black));
+}
+.nav-list-item__link:hover {
+  color: hsl(var(--clr-blue));
+  border-bottom: 2px solid hsl(var(--clr-blue));
+}
+
+.half-border {
+  border-top: 1px solid hsl(var(--clr-black)/0.6);
+  position: relative;
+}
+
+.half-border:after {
+  content: "";
+  width: 85%;
+  height: 1.1px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: -1px;
+}
+
+/* ---------- Intro Section ------------- */
+.intro {
+  display: flex;
+  flex-basis: 100%;
+  gap: var(--gap, 0.6rem);
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.intro__description {
+  width: 59%;
+}
+
+/* ---------- Gallery Section ------------- */
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: grid;
+  grid-gap: 26px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(23, auto);
+  grid-auto-flow: dense;
+  max-width: 1114px;
+}
+.gallery__image {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+.gallery__image:hover {
+  transform: scale(1.05);
+}
+.gallery .h-4 {
+  grid-row: span 4;
+}
+.gallery .h-5 {
+  grid-row: span 5;
+}
+.gallery .h-6 {
+  grid-row: span 6;
+}
+.gallery .h-7 {
+  grid-row: span 7;
+}
+
+.gallery img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  flex: 1;
+  opacity: 0.7;
+  object-fit: cover;
+  transition: all 300ms ease-out;
+}
+
+.gallery__image:hover img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* ---------- Services Section ------------- */
+.services {
+  display: flex;
+  gap: 2em;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.services__description {
+  width: 40%;
+  line-height: 2.375;
+  letter-spacing: 1.4;
+}
+.services__type {
+  list-style-type: none;
+}
+
+/* ---------- Awwwards Section ------------- */
+.awwwards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3em;
+}
+.awwwards__item1 {
+  grid-area: 1/1/3/3;
+}
+.awwwards__item2 {
+  grid-area: 1/3/2/4;
+}
+.awwwards__item3 {
+  grid-area: 1/4/2/5;
+}
+.awwwards__item4 {
+  grid-area: 1/5/2/6;
+  justify-self: right;
+}
+.awwwards__item5 {
+  grid-area: 2/3/3/4;
+}
+.awwwards__item6 {
+  grid-area: 2/4/3/5;
+}
+.awwwards__item7 {
+  grid-area: 2/5/3/6;
+  justify-self: right;
+}
+
+/* ---------- Design Awards Section ------------- */
+.design-awards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3em;
+}
+.design-awards__item1 {
+  grid-area: 1/1/3/3;
+}
+.design-awards__item2 {
+  grid-area: 1/3/2/4;
+}
+.design-awards__item3 {
+  grid-area: 1/4/2/5;
+}
+.design-awards__item4 {
+  grid-area: 1/5/2/6;
+  justify-self: right;
+}
+.design-awards__item5 {
+  grid-area: 2/3/3/4;
+}
+.design-awards__item6 {
+  grid-area: 2/4/3/5;
+}
+.design-awards__item7 {
+  grid-area: 2/5/3/6;
+  justify-self: right;
+}
+
+/* ---------- footer Section ------------- */
+.footer {
+  display: flex;
+  flex-basis: 100%;
+  gap: var(--gap, 0.6rem);
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+  width: 100%;
+}
+.footer__nav-list {
+  display: flex;
+  flex-basis: 100%;
+  gap: var(--gap, 0.6rem);
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.footer__icons-list {
+  display: flex;
+  flex-basis: 100%;
+  gap: var(--gap, 0.6rem);
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-list-item {
+  margin-left: 1.3em;
+  display: inline-block;
+}
+.nav-list-item__link {
+  color: hsl(var(--clr-black));
+}
+.nav-list-item__link:hover {
+  color: hsl(var(--clr-blue));
+  border-bottom: 2px solid hsl(var(--clr-blue));
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
