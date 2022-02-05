@@ -173,7 +173,7 @@ Action: translates it into hours, minutes, and seconds
 Output: execute hh:mm:ss string
 */
 
-const givenSecond =  prompt("Enter the seconds:");
+// const givenSecond =  prompt("Enter the seconds:");
 
 
 
