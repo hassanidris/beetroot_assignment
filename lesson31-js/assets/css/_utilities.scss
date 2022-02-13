@@ -1,0 +1,73 @@
+body {
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-400);
+    color: var(--clr-russian-Black);
+    // padding: 5em 0;
+    // text-align: center;
+
+    // @media (min-width: 50em) {
+    //     background: 
+    //     url(../img/bg-pattern-top-desktop.svg) top left,
+    //     url(../img/bg-pattern-bottom-desktop.svg) bottom right;
+    //     background-size: 50%, 30%;
+    //     background-repeat: no-repeat;
+    // }
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    // margin: 0 auto;
+    // padding-inline: .5em;
+    // max-width: 1100px;
+
+    // @media (min-width: 50em) {
+    //     padding-inline: 2em;
+    // }
+}
+
+.container {
+    max-width: 70rem;
+    // padding: 0 2em;
+    margin: 0 auto;
+    // display: flex;
+}
+
+.flow-content > * + * {
+    margin-top: var(--spacer, 1em);
+}
+
+.double {
+    display: flex;
+    
+}
+
+.a-center {
+    align-items: center;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+
+// ------ Typography ------- //
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
