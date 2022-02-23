@@ -1,0 +1,74 @@
+body {
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-300);
+    color: var(--clr-russian-Black);
+    background-color: var(--clr-sunglow);
+    // padding: 5em 0;
+    // text-align: center;
+
+    // @media (min-width: 50em) {
+    //     background: 
+    //     url(../img/bg-pattern-top-desktop.svg) top left,
+    //     url(../img/bg-pattern-bottom-desktop.svg) bottom right;
+    //     background-size: 50%, 30%;
+    //     background-repeat: no-repeat;
+    // }
+}
+
+
+.wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/map.jpg) no-repeat;
+    background-size: cover;
+    background-position: 75% 20%;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100vw;
+    // max-width: 70rem;
+    // padding: 0 2em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flow-content > * + * {
+    margin-top: var(--spacer, 1em);
+}
+
+.double {
+    display: flex;
+    
+}
+
+.a-center {
+    align-items: center;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+
+// ------ Typography ------- //
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
